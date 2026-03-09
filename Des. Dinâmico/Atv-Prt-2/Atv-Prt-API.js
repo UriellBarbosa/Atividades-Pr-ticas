@@ -73,7 +73,6 @@ async function consumirApiPlanejada(provedor, config) {
         posts = posts.map((p, i) => ({ p, i }));
         posts.sort((a, b) => {
             let c = 0;
-            
             if (ordenarPor === "title") {
                 c = a.p.title.localeCompare(b.p.title);
             } else {
